@@ -1,0 +1,250 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: url(/coffeebg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header{
+    /* background-color: #6a4c93; */
+    background-color: #a45a2a;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+header .logo{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+header .logo:hover{
+    animation: blink 1s infinite;
+}
+.burger{
+    display: none;
+}
+.navigation a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: #ffca3a;
+}
+section{
+    padding: 30px;
+}
+.hero{
+    padding: 100px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.hero h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.hero h2 .soft{
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    font-size: 3em;
+    font-weight: 600;
+}
+.hero h3{
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn{
+    color: white;
+    background-color: #190e0a;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9em 2.1em;
+    border-radius: 8px;
+    border: 1px solid white;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color: #a45a2a;
+    color: white;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+.social-icons a{
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #8ac926;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+footer{
+    background-color: #a45a2a;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color: white;
+}
+footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+.education{
+    list-style: none;
+}
+.university-logo{
+    width: fit-content;
+}
+.dropdown{
+    display: none;
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+        font-size: 1em;
+    }
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.hero h2 .saad{
+    animation: blink 0.50s infinite;
+}
+.drop-menu{
+    display: none;
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+    .navigation{
+        display: none;
+    }
+    /* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 1.5em;
+    border: none;
+    width: 100px;
+    border-radius: 10px;
+  }
+  .dropdown-content a{
+    background-color: #000;
+    color: #8ac926;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    /* color: white; */
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: black;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+    .social-icons{
+        font-size: 1em;
+    }
+    .footer-title{
+        font-size: 0.8em;
+    }
+}
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+    .hero {
+        padding-left: 10px;
+    }
+}
+@keyframes blink {
+    0%   {text-shadow: 0 0 6px #FFF;}
+    25%  {text-shadow: 0 0 0px #000;}
+    50%  {text-shadow: 0 0 6px #FFF;}
+    100%  {text-shadow: 0 0 0px #000;}
+}
