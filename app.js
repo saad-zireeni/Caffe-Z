@@ -1,18 +1,27 @@
+let order = [];
 let user = prompt("Please enter your name:");
+order.push(user);
 let gender = prompt("what is your gender?");
-let lowerGender = gender.toLocaleLowerCase();
 
-if(lowerGender === "male"){
+
+while(gender !== "male" && gender !== "female"){
+    gender = prompt("what is your gender?");
+}
+order.push(gender);
+
+if(gender == "male"){
     alert("Welcome Mr."+user);
 }
-else if( lowerGender === "female"){
+else if( gender == "female"){
     alert("Welcome Ms."+user);
 }
-else{
-    alert("Welcome "+user);
-}
-let drink_temp = prompt("Would you like a HOT or COLD drink ?");
+
+let drink_temp = prompt("Would you like a HOT or COLD drink ☕?");
+order.push(drink_temp);
 let drink_name = prompt("What is the name of your drink?");
+order.push(drink_name);
 alert("Your drink is being prepared...");
 
-console.log(user + " ordered a " + drink_name);
+for(let i = 0; i < order.length; i++){
+    console.log(order[i]);
+}
