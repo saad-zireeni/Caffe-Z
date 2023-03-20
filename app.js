@@ -4,17 +4,22 @@ order.push(user);
 let gender = prompt("what is your gender?");
 
 
-while(gender !== "male" && gender !== "female"){
-    gender = prompt("what is your gender?");
-}
-order.push(gender);
+getGender();
 
-if(gender == "male"){
-    alert("Welcome Mr."+user);
+function getGender(){
+    while(gender !== "male" && gender !== "female"){
+        gender = prompt("what is your gender?");
+    }
+    order.push(gender);
+    
+    if(gender == "male"){
+        alert("Welcome Mr."+user);
+    }
+    else if( gender == "female"){
+        alert("Welcome Ms."+user);
+    }
 }
-else if( gender == "female"){
-    alert("Welcome Ms."+user);
-}
+
 
 let drink_temp = prompt("Would you like a HOT or COLD drink ☕?");
 order.push(drink_temp);
