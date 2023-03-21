@@ -248,3 +248,12 @@ footer .social-icons a{
     50%  {text-shadow: 0 0 6px #FFF;}
     100%  {text-shadow: 0 0 0px #000;}
 }
+
+#order-container{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
