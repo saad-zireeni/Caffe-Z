@@ -17,7 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Saad Zireeni</title>
   </head>
@@ -44,33 +49,74 @@
     <!-- Hero Start -->
     <section class="hero">
       <div>
-        <h2>Hello, we are <span class="saad">Cafè Z</span><br/><span class="soft">Coffee Shop</span></h2>
+        <h2>
+          Hello, we are <span class="saad">Cafè Z</span><br /><span class="soft"
+            >Coffee Shop</span
+          >
+        </h2>
         <h3>We Make the best Hot and Cold drinks</h3>
         <a href="#projects" class="main-btn">View our drinks</a>
         <div class="social-icons">
           <!-- <a href="https://www.linkedin.com/in/saad-zireeni/"><i class="fa-brands fa-linkedin"></i></a> -->
-          <a href="https://www.facebook.com/SaadZireeni99"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/saad_zireeni/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/SaadZireeni99"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/saad_zireeni/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
           <!-- <a href="https://github.com/saad-zireeni"><i class="fa-brands fa-github"></i></a> -->
         </div>
       </div>
     </section>
-    <div id="order-container"></div>
-    
+
+    <div id="form-container">
+      <h2 style="margin: 2em;">Place your order:</h2>
+    <form id="form">
+      <label for="name">Name:</label>
+      <input type="text" name="name" /><br /><br />
+      <label for="age">Age:</label>
+      <input type="number" name="age" /><br /><br />
+      <label for="temp">Drink Temp:</label>
+      <input type="radio" name="temp" id="hot" value="hot" />
+      <label for="hot">Hot</label>
+      <input type="radio" name="temp" id="cold" value="cold" />
+      <label for="cold">Cold</label> <br /><br />
+      <label for="drink">Drink name:</label>
+      <input type="text" name="drink" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div id="order">
+      
+    </div>
+  </div>
+
     <!-- Footer Start -->
     <footer id="contact">
       <p class="footer-title">Copyright @<span>Cafè Z</span></p>
       <div class="social-icons">
-        <a href="https://api.whatsapp.com/send/?phone=962797967092&text&type=phone_number&app_absent=0"><i class="fa-solid fa-phone"></i></a>
-        <a href="mailto:saad.alzireeni@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://www.facebook.com/SaadZireeni99"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/saad_zireeni/"><i class="fa-brands fa-instagram"></i></a>
+        <a
+          href="https://api.whatsapp.com/send/?phone=962797967092&text&type=phone_number&app_absent=0"
+          ><i class="fa-solid fa-phone"></i
+        ></a>
+        <a href="mailto:saad.alzireeni@gmail.com"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a href="https://www.facebook.com/SaadZireeni99"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/saad_zireeni/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
       </div>
     </footer>
     <!-- Footer End -->
 
     <script src="./app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
