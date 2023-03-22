@@ -6,29 +6,33 @@ form.addEventListener("submit", (e)=>{
 
     let userName = e.target.name.value;
     let age = e.target.age.value;
-    let temp = e.target.temp.value;
+    let tempHot = e.target.tempHot.checked ? e.target.tempHot.value : "" ;
+    let tempCold = e.target.tempCold.checked ? e.target.tempCold.value : "" ;
     let drink = e.target.drink.value;
 
-    // console.log(userName + " " + age + " " + temp + " " +drink);
-    render(userName, age, drink, temp);
+    console.log(userName, age, tempHot, tempCold, drink);
+    render(userName, age, drink, tempHot, tempCold);
 });
 
-function render(userName, age, drink, temp){
+function render(userName, age, drink, tempHot, tempCold) {
 
     let pName = document.createElement("p");
     let pAge = document.createElement("p");
-    let pTemp = document.createElement("p");
+    let pTempHot = document.createElement("p");
+    let pTempCold = document.createElement("p");
     let pDrink = document.createElement("p");
 
 
     pName.textContent = userName;
     pAge.textContent = age;
-    pTemp.textContent = temp;
+    pTempHot.textContent = tempHot;
+    pTempCold.textContent = tempCold;
     pDrink.textContent = drink;
 
     order.appendChild(pName);
     order.appendChild(pAge);
-    order.appendChild(pTemp);
+    order.appendChild(pTempHot);
+    order.appendChild(pTempCold);
     order.appendChild(pDrink);
 
 }
